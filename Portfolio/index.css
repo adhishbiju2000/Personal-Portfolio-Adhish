@@ -1,0 +1,689 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background-color: #000000; /* Ensure the background is white */
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 1;
+    display: flex;
+    justify-content: center;
+    gap: 180px;
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #007bff;
+}
+
+/* Banner Section */
+.banner {
+    text-align: center;
+    padding: 20px;
+}
+
+.banner-image {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 150px;
+    padding: 100px 50px;
+    background-color: #000000;
+    flex-wrap: wrap; /* Enables responsiveness */
+}
+
+.profile-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.intro {
+    flex: 1;
+    font-size: 1.2rem;
+    color: #ffffff;
+    max-width: 600px;
+    text-align: left;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.9s ease-out, transform 1.5s ease-out;
+}
+
+.intro.animate {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+/* Button styles (your existing one) */
+.resume-btn {
+    margin-top: 0px;
+    display: inline-block;
+    padding: 12px 240px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #007bff;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .resume-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .resume-btn i {
+    margin-right: 8px;
+  }
+
+
+/* Section Styles */
+section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #000000; /* Ensure each section has a white background */
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+
+    color: #ffffff;
+}
+
+section p {
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+ul {
+    list-style-type: disc;
+    margin: 20px auto;
+    padding: 0;
+    max-width: 900px;
+    text-align: left;
+    color: #ffffff;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #008bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0; /* Remove default margin */
+}
+
+/* Animation for the Hero Section intro */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Projects, Education, Resume, and Contact sections */
+/* Projects Section Background */
+/* Full Projects Section Styling */
+/* Project Section Styles Only */
+/* Section Background */
+#projects {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Section Title */
+#projects h2 {
+    color: #00bfff; /* Light blue */
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* GitHub Button */
+.github-button {
+    display: inline-block;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.github-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+/* Major Project Section */
+.major-project-card {
+    background-color: #1a1a1a;
+    padding: 40px 20px;
+    margin: 0 auto 40px auto;      /* Center the card */
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0, 191, 255, 0.4);
+    max-width: 1000px;             /* Control width */
+    width: 90%;                    /* Responsive */
+}
+
+.major-project-heading {
+    color: #00bfff;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.major-project-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+/* Image on left */
+.major-project-image {
+    order: 1;
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/* Text on right */
+.major-project-details {
+    order: 2;
+    flex: 1;
+    min-width: 280px;
+    max-width: 6000px;
+}
+
+.major-project-details {
+    text-align: left; /* Ensure left alignment */
+    flex: 1;
+    min-width: 280px;
+    max-width: 600px;
+}
+
+.major-project-details ul,
+.major-project-details p,
+.major-project-details h3,
+.major-project-details a {
+    text-align: left !important; /* Force left alignment on nested elements */
+    margin-left: 0;              /* Reset any unwanted margin */
+}
+
+/* Optional: Ensure the button aligns left too */
+.major-project-details .project-button {
+    display: inline-block;
+    margin-top: 20px;
+}
+.major-project-details {
+    max-width: 600px;
+    color: #e0e0e0;
+}
+
+.major-project-details h3 {
+    color: #00bfff;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.major-project-details p,
+.major-project-details li {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.major-project-details ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.major-project-details li::before {
+    content: "• ";
+    color: #00bfff;
+    margin-right: 5px;
+}
+
+/* Project Grid Layout */
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Individual Project Card */
+.project-card {
+    background-color: #121212;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+/* Hover Animation */
+.project-card:hover {
+    transform: scale(1.03);
+}
+
+/* Project Image Styling */
+.project-image {
+    width: 100%;
+    height: auto;               /* Prevents cropping */
+    object-fit: contain;        /* Scales inside container */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #fff;     /* Optional: white padding feel */
+}
+
+/* Project Heading */
+.project-card h3 {
+    color: #00bfff;             /* Blue headings */
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Project Description and List */
+.project-card p,
+.project-card li {
+    color: #e0e0e0;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 5px 0;
+    text-align: left;
+}
+
+/* Project Button */
+.project-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.project-button:hover {
+    background-color: #0056b3;
+}
+
+
+.banner-image {
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+
+
+.education-section {
+    text-align: center;
+    background-color: #000000;
+    padding: 40px 20px;
+}
+
+.education-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.education-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 20px;
+    
+}
+
+.education-content {
+    flex: 3;
+    text-align: left;
+    padding-left: 80px; /* Add padding to move the content slightly to the right */
+   text-align: justify;
+
+}
+
+.education-logo {
+    flex: 1;
+    text-align: center;
+}
+
+.education-logo img {
+    width: 180px; /* Adjust the size of the logo */
+    height: auto;
+    border-radius: 8%;
+    object-fit:fill;
+}
+
+
+.internship-section {
+    text-align: center;
+    background-color: #000000;
+    padding: 40px 20px;
+}
+
+.internship-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.internship-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 20px;
+}
+
+.internship-content {
+    flex: 3;
+    text-align: left;
+    padding-left: 80px; /* Add padding to move the content slightly to the right */
+}
+
+.internship-logo {
+    flex: 1;
+    text-align: center;
+
+    
+}
+
+.internship-logo img {
+    width: 200px; /* Adjust the size of the logo */
+    height: auto;
+    object-fit: contain;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+
+.certificate-link {
+    display: inline-block;
+    background-color: #0078D4; /* Microsoft blue */
+    color: #ffffff;
+    padding: 10px 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.certificate-link:hover {
+    background-color: #005a9e; /* darker blue on hover */
+}
+
+
+
+
+.certificates-section {
+    padding: 40px 20px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.certificates-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.certificate-card {
+    background-color: #121212;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 139, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+}
+
+.certificate-card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.certificate-card h3 {
+    font-size: 1.1rem;
+    color: #00bfff;
+    margin: 10px 0 5px;
+}
+
+.certificate-card p {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.certificate-card a {
+    display: inline-block;
+    padding: 6px 14px;
+    color: #fff;
+    background-color: #008bff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: background-color 0.3s ease;
+}
+
+.certificate-card a:hover {
+    background-color: #005fa3;
+}
+
+
+.github-link {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.github-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #008bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.github-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #008bff;
+    text-decoration: none;
+    border: 1px solid #005fa3;
+    border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.github-button:hover {
+    background-color: #005fa3;
+    color: #ffffff;
+}
+
+
+
+.contact-section {
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 60px 20px;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.contact-card {
+    background-color: #111111;
+    border: 1px solid #444;
+    padding: 20px 30px;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+    background-color: #1a1a1a;
+}
+
+.contact-card i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #008bff;
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover i {
+    transform: scale(1.2) rotate(10deg);
+}
+
+.contact-card a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.95rem;
+    display: block;
+    margin-top: 5px;
+    word-wrap: break-word;
+}
+
+.contact-card a:hover {
+    color: #008bff;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .contact-card {
+        width: 90%;
+    }
+}
