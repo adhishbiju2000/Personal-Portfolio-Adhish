@@ -32,7 +32,7 @@ header {
 }
 
 .navbar a:hover {
-    color: #007bff;
+    color: #3690f1;
 }
 
 /* Banner Section */
@@ -62,8 +62,8 @@ header {
 }
 
 .profile-image {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -73,6 +73,12 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.hero-heading {
+    font-size: 3rem; /* bigger font */
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #0fb3ff;
 }
 
 .intro {
@@ -92,6 +98,21 @@ header {
     animation: fadeInUp 1s ease-in-out;
 }
 
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 80px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 2.2rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
 
 
 @keyframes fadeInUp {
@@ -104,9 +125,6 @@ header {
         transform: translateY(0);
     }
 }
-
-
-
 
 /* Button styles (your existing one) */
 .resume-btn {
